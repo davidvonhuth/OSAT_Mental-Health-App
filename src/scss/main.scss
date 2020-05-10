@@ -1,0 +1,534 @@
+ 
+//*********************  INDEX  ***************************************************
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+//*********************  APP  ****************************************************** 
+.app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    // background-color: rgba(230, 223, 164, 0.74);
+    background-image: url("../assets/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: 408px 700px;
+
+
+
+
+    width: 414px;
+    height: 700px;
+    text-align: center;
+    padding-top: 0px;
+    margin: 0 auto;
+    border-radius: 15px 15px 15px 15px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    position: relative;
+    background-color: rgb(255, 252, 209);
+    margin-top: 20px;
+}
+.test:hover{
+    background-color: rgb(144, 195, 49);
+}
+
+//*********************  LOGIN-SCREEN  *********************************************
+.login{
+    margin-top: 60px;
+}
+  
+.LogInBox {
+
+margin: 30px;
+border-radius: 15px 15px 15px 15px;
+background-color: #fffbfb87;
+}
+
+.LogInInfo {
+font-weight: bold;
+padding: 10px;
+padding-top: 15px;
+margin: 5px;
+}
+
+.buttonbox {
+padding-bottom: 10px;
+}
+
+.Button {
+border-radius: 5px 5px 5px 5px;
+font-weight: bold;
+font-size: 75%;
+padding: 10px;
+margin: 5px;
+text-align: center;
+color: white;
+background-color: #20606e;
+}
+
+.password {
+padding: 5px;
+margin: 5px;
+}
+
+.username {
+padding: 5px;
+margin: 5px;
+}
+
+.error {
+color: red;
+}
+
+//*********************  WELCOME-SCREEN  *******************************************
+.box {
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #ffffff69;
+}
+
+//*********************  QUESTION-1/2/3  ********************************************
+.quizbutton {
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    font-size: 75%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    background-color: #247ff7;
+}
+
+//*********************  HOMEPAGE/LANDINGPAGE  *************************************************
+.header {
+    text-align: center;
+}
+.taskBox{
+    background-color: #9d9c9c;
+    display: flex;
+    width: 325px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.task_HP{
+    background-color: rgb(89, 89, 160);
+    border-radius: 0px 10px 10px 0px;
+    width: 325px;
+    font-size: 126%;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    
+}
+
+.innerTask_HP{
+    position: relative;
+    left: 31px;
+}
+
+.innerTask_AD{
+    color: white;
+    font-size: 90%;
+}
+
+#checkbox_HP{
+    opacity: 1;
+    pointer-events: all;
+    position: absolute;
+    right: 94px;
+}
+
+.OSAT_HP_LOGO{
+    position: relative;
+    background-color: black;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.OSAT_HP_LOGO > img{
+    position: relative;
+    top: -2px;
+}
+
+
+.myNavbar {
+    position: absolute;
+
+    bottom:20px;
+    left: 12px;
+    margin-left: 20px;
+    z-index: 2;
+    // $theme-colors: ("primary": purple );
+}
+.navbarButton{
+    margin-left: 14px;
+
+}
+
+
+
+.homepage-btn-toolbar > .btn {
+    margin-right: 1.3rem;
+    padding-bottom: 2.5em;
+    border-radius: 0.5rem;
+    height: 40px;
+    background-color: #434343;
+}
+
+//**********************  CALENDAR  ************************************************
+
+caption
+{
+	text-transform: uppercase;
+	font-size: 140%;
+    border: solid black 1pt;
+}
+table
+{
+    border-collapse: collapse;
+    position: absolute;
+    top: 150px;
+    left: 9px;
+}
+
+tr>th
+{
+	background-color: rgb(0, 0, 0);
+    color: white;
+    width: 56px;
+    height: 45px;
+    font-size: 35%;
+}
+
+tr>td
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 56px;
+    height: 45px;
+    font-size: 35%;
+
+    
+}
+
+.empty
+{
+	background-color: lightgrey;
+}
+
+.bottomline td
+{
+	background-color: green;
+}
+
+td:hover
+{
+	background-color: rgb(240, 163, 40);
+}
+
+
+
+
+
+
+
+
+
+
+//**************************************************************************
+@import "./bootstrap/bootstrap";
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+//   html, body {
+//       height: 100%;
+//   }
+  
+//   body {
+//       background: #222;
+//       font-family: monospace;
+//   }
+  
+  .b-chat {
+      width: 100%;
+      margin: 0 0%;
+      padding: 1em 0;
+      height: 80%;
+      
+      &__container {
+          max-width: 300px;
+          margin: auto;
+          height: 80%;
+      }
+  }
+  
+  #chat, .c-chat {
+      height: 100%;
+  }
+  
+  .c-chat {
+      width: 100%;
+      position: relative;
+      height: 100%;
+      font-size: 1em;
+  
+      &__list {
+          margin: 0;
+          padding: 0;
+          overflow-y: scroll;
+          overflow-x: visible;
+          height: 90%;
+          
+          &::-webkit-scrollbar {
+              width: 0px;
+              background: transparent;
+          }
+              
+          .c-chat__item {
+              text-align: left;
+      
+              &--human {
+                  text-align: right;
+  
+                  .c-chat__message {
+                      background: #00ac92;
+                      color: white;
+                      border-top-right-radius: 0;
+                      border-top-left-radius: 10px;
+                  }
+              }
+      
+              margin-bottom: 1em;
+          }
+          
+          .c-chat__message {
+              display: inline-block;
+              background: #fff;
+              color: #222;
+      
+              padding: 0.6em;
+              border-radius: 10px;
+              border-top-left-radius: 0;
+                  
+              animation-name: bounceIn;
+              animation-duration: 0.4s;
+              animation-fill-mode: both;
+              
+              .c-chat__item--human &{
+                  background: #00ac92;
+                  color: #fff;
+                  border-top-right-radius: 0;
+                  border-top-left-radius: 10px;
+              }
+              
+          }
+      
+          .c-chat__action {
+              border-bottom: 1px dotted #fff;
+              color: #fff;
+              padding: 0.6em;
+              display: inline-block;
+      
+              animation-name: bounceIn;
+              animation-duration: 0.4s;
+              animation-fill-mode: both;
+      
+              margin-right: 0.8em;
+  
+              &:hover {
+                  border-bottom: 1px dotted transparent;
+              }
+          }
+      }
+  
+      &__form {
+          position: fixed;
+          
+          top: 10;
+          
+          
+          width: 80%;
+          
+          input {
+              padding: 1em;
+              width: 100%;
+              border: none;
+              font-family: monospace;
+              border-bottom: 1px solid #fff;
+              background: none;
+              color: black;
+              opacity: 1;
+              transition: opacity 0.4s;
+  
+              &, &:focus {
+                  outline: none;
+              }
+  
+          }
+      }
+  
+      &--ready {
+          input {
+              opacity: 1;
+          }
+      }
+  }
+  
+  @keyframes bounceIn{
+    0%{
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.89);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+.goBackButton{
+    position: relative;
+    right: 169px;
+    top: -45px;
+}
+
+.goBackButton:hover{
+    transform: scale(1.4);
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+
+.statusBar{
+    position: relative;
+    left: -2px;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 8px;
+}
+
+.todaysDate{
+    font-size: 179%;
+    position: relative;
+    bottom: 12px;
+}
+
+.todaysTasksBG{
+    height: 487px;
+    background-color: #fffefe74;
+    width: 392px;
+    position: relative;
+    left: 7px;
+    border-radius: 0px 72px 72px 72px;
+}
+
+.taskTitle{
+    float: left;
+    font-size: 166%;
+    font-family: monospace;
+    height: 11px;
+}
+
+.addTaskButton{
+    width: 74px;
+    position: absolute;
+    left: 305px;
+    top: 406px;
+}
+
+.addTaskButton:hover{
+    transform: scale(1.2);
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+
+.taskHeader{
+    height: 50px;
+}
+
+.deleteTask{
+    width: 20px;
+    position: absolute;
+    left: 358px;
+    display: inline-block;
+}
+
+.deleteTask:hover{
+    transform: scale(1.3);
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+
+.editIcon{
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 325px;
+}
+
+.editIcon:hover{
+    transform: scale(1.2);
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+
+.bulletPoint{
+    width: 30px;
+}
+
+.bulletPoint_HP{
+    width: 30px;
+    position: absolute;
+    left: -2px;
+}
+
+.currentTime{
+    width: 84px;
+    background-color: black;
+    position: absolute;
+    z-index: inherit;
+    left: 161px;
+    bottom: 40px;
+    font-size: 93%;
+    color: white;
+}
+
+
+.redStyle{
+    background-color: red;
+}
+
+#modal{
+    position: fixed;
+    top: 83px;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 46%;
+    height: 86%;
+    overflow: overlay;
+    outline: 0;
+}
+
+
