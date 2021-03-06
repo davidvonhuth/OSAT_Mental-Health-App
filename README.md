@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For a live demonstration of how the app works, follow this link:  https://vimeo.com/520259629
 
 ## Available Scripts
 
